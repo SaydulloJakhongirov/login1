@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "inter";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-image: url(./image/bakcground-login.jpg);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+    justify-content: center;
+}
+
+.login-text{
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.login-input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px #fff;
+    background: none;
+    padding: 10px;
+    outline: none;
+    color: #fff;
+}
+
+::placeholder{
+    color: #fff;
+    font-weight: 100;
+}
+
+.button-login{
+    padding: 10px;
+    background: none;
+    color: #fff;
+    border: solid 1px #fff;
+    cursor: pointer;
+}
+
+.button-login:hover{
+    background-color: #fff;
+    color: black;
+    transition: 0.7s;
+}
+
+.border{
+    border: solid 1px #fff;
+    border-radius: 30%;
+    padding: 60px 90px;
+}
+
+.ib-input {
+    display: grid;
+    grid-row-gap: 20px;
+    max-width: 200px;
+}
+
+@media screen and (max-width:440px) {
+    .login-text{
+        font-size: 40px;
+    }
+
+    .button-login{
+        padding: 10px;
+    }
+
+    .login-input{
+        padding: 7px;
+    }
+
+    .border{
+        padding: 40px 70px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .login-text{
+        font-size: 35px;
+    }
+
+    .button-login{
+        padding: 10px;
+        max-width: 130px;
+        margin-left: 30px;
+    }
+
+    .login-input{
+        padding: 7px;
+    }
+    .border{
+        padding: 20px 50px;
+    }
+}
